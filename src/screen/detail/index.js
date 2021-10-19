@@ -13,11 +13,11 @@ export default function Index() {
     const { data } = await Movies.details({ i: imdbID });
     setDetail(data);
     setLoading(false);
-  }, []);
+  }, [imdbID]);
 
   useEffect(() => {
     getDetailFilm();
-  }, []);
+  }, [getDetailFilm]);
 
   if (loading) {
     return <>Loading</>;
