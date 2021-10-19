@@ -60,7 +60,7 @@ export default function MoviesList(props) {
   return (
     <div className="w-full max-w-full overflow-x-hidden">
       <Navbar />
-      <div class="grid grid-cols-3 gap-2 m-4">
+      <div className="grid grid-cols-3 gap-2 m-4">
         {props.movies.map((item) => (
           <div key={item.imdbID} className="p-4 m-4 bg-white rounded-md ">
             <img
